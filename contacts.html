@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+ 
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4cafa7, #364d38);
+        }
+        header {
+           
+            color: rgb(0, 0, 0);
+            
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            
+        }
+        nav ul li a:hover {
+            transition: 0.8s;
+            color: #fff;
+            text-decoration: underline;
+        }
+        nav ul li a:active {
+            color: #fff;
+        }
+        .contacts {
+            text-align: center;
+            margin: 20px 0;
+            padding: 0 15px;
+            font-family: "Bricolage Grotesque", sans-serif;
+            color: #ffffffd3;
+            font-size: 1.2rem; /* Increased font size */
+        }
+        .map {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .map iframe {
+            max-width: 100%; /* Make map responsive */
+            border-radius: 10px;
+        }
+
+    /* --- Media Queries for Responsiveness --- */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block; /* Stack navigation links */
+            margin: 10px 0;
+        }
+        header img {
+            width: 30%; /* Adjust logo size */
+        }
+        .map iframe {
+            width: 95%; /* Adjust map width for small screens */
+            height: 300px; /* Adjust height */
+        }
+    }
+     footer {
+        background: linear-gradient(to right, #4cafa7, #364d38);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1rem;
+        border-top: 2px solid #4cafa7;
+        margin-top: 40px;
+    }
+    footer p {
+        margin: 0;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 768px) {
+        footer {
+            font-size: 0.9rem;
+            padding: 16px 0;
+        }
+        footer p {
+            padding: 0 10px;
+        }
+    }
+    @media (max-width: 480px) {
+        footer {
+            font-size: 0.8rem;
+            padding: 12px 0;
+        }
+    }
+   
+    </style>
+</head>
+<header>
+    <img src="freepik_br_7f8ff6e0-f95e-4d00-b3ec-d7108fcfd4b5.png" width="10%" alt="">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="testi.html">Testimonies</a></li>
+        </ul>
+    </nav>
+</header>
+</head>
+<body>
+    <div class="contacts">
+        <h1>Contact Us</h1>
+         Contact us for more information <br>
++2348027548111
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.551631557993!2d3.3448496153039!3d6.451632725852556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1a8a3a0e7b%3A0x7d8f3b4d4f6c5b9e!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1628541258603!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+<footer>
+    <p>&copy; Oyetscholars. All rights reserved. <span id="year"></span></p>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</footer>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4cafa7, #364d38);
+        }
+        header {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            transition: 0.8s;
+            color: #fff;
+            text-decoration: underline;
+        }
+        nav ul li a:active {
+            color: #fff;
+        }
+        .testimonials, .st1, .st2 {
+            text-align: center;
+            margin: 20px auto;
+            padding: 0 15px;
+            font-family: "Bricolage Grotesque", sans-serif;
+            color: #ffffffd3;
+            max-width: 800px; /* Constrain width for readability */
+        }
+        .img1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img1 img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .learn{
+            display: block; /* Changed to block for centering */
+            width: fit-content; /* Fit the content */
+            margin: 20px auto; /* Center horizontally */
+            font-family: "Bricolage Grotesque", sans-serif;
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .learn a {
+        text-decoration: none;
+        color: #4cafa7;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    /* --- Media Queries for Responsiveness --- */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block; /* Stack navigation links */
+            margin: 10px 0;
+        }
+        header img {
+            width: 30%; /* Adjust logo size */
+        }
+        .st1 h1, .st2 h1, h1 {
+            font-size: 1.8rem; /* Reduce heading size */
+        }
+    }
+     footer {
+        background: linear-gradient(to right, #4cafa7, #364d38);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1rem;
+        border-top: 2px solid #4cafa7;
+        margin-top: 40px;
+    }
+    footer p {
+        margin: 0;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 768px) {
+        footer {
+            font-size: 0.9rem;
+            padding: 16px 0;
+        }
+        footer p {
+            padding: 0 10px;
+        }
+    }
+    @media (max-width: 480px) {
+        footer {
+            font-size: 0.8rem;
+            padding: 12px 0;
+        }
+    }
+   
+    </style>
+</head>
+<header>
+    <img src="freepik_br_7f8ff6e0-f95e-4d00-b3ec-d7108fcfd4b5.png" width="10%" alt="">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="testi.html">Testimonies</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="text-align: center;color: #ffffffd3;">Testimonies</h1>
+    <div class="st1">
+        <h1>Quadri</h1>
+        <p>I was just in JSS3 when you started teaching me add math, physics and chemistry together with other students. You treated me liked a younger one and also tutored me privately. My knowledge in science can only be traced back to you. Back then on secondary school, I intentionally missed my science classes and still scored the highest in tests and exams all because of the knowledge you impacted on me. You taught me the basis of a lot of things. You made it easy for me to read and understand things others would find difficult. Apart from teaching (Saturday and Sunday classes), the way you keep advising me is second to none. I can’t even count the number of teaching jobs you’ve given to me</p>
+    </div>
+    <div class="img1">
+        <img src="student1.jpg" alt="">
+    </div>
+    <div class="st2">
+        <h1>Obinna Ekemeka</h1>
+        <p>There were many time where I almost gave up but you didn't let me. You have helped not only me but so many other people in different ways. No one can ever have the kind of heart you have your blessed. You Mr Tola made my whole year's in secondary school the best irrespective of when i was ignorant you still stood determined on my matter you changed me in a way! never thought was possible You prepared me for my jamb, waec and for life its self for that I'm grateful God bless you sir</p>
+    </div>
+    <div class="img1">
+        <img src="stu2.png" alt="">
+    </div>
+    <div class="learn">
+        <a href="testi2.html">Read more</a>
+
+    </div>
+</body>
+<footer>
+    <p>&copy; Oyetscholars. All rights reserved. <span id="year"></span></p>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</footer>
+</html>

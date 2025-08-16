@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+ 
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4cafa7, #364d38);
+        }
+        header {
+           
+            color: rgb(0, 0, 0);
+            
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            
+        }
+        nav ul li a:hover {
+            transition: 0.8s;
+            color: #fff;
+            text-decoration: underline;
+        }
+        nav ul li a:active {
+            color: #fff;
+        }
+        .story {
+            text-align: center;
+            margin: 20px 0;
+            padding: 0 15px; /* Added padding */
+            font-family: "Bricolage Grotesque", sans-serif;
+            color: #ffffffd3;
+        }
+        .story img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+    /* --- Media Queries for Responsiveness --- */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block; /* Stack navigation links */
+            margin: 10px 0;
+        }
+        .story h1 {
+            font-size: 1.8rem; /* Reduce heading size */
+        }
+        header img {
+            width: 30%; /* Adjust logo size */
+        }
+    }
+     footer {
+        background: linear-gradient(to right, #4cafa7, #364d38);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1rem;
+        border-top: 2px solid #4cafa7;
+        margin-top: 40px;
+    }
+    footer p {
+        margin: 0;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 768px) {
+        footer {
+            font-size: 0.9rem;
+            padding: 16px 0;
+        }
+        footer p {
+            padding: 0 10px;
+        }
+    }
+    @media (max-width: 480px) {
+        footer {
+            font-size: 0.8rem;
+            padding: 12px 0;
+        }
+    }
+   
+    </style>
+</head>
+<header>
+    <img src="freepik_br_7f8ff6e0-f95e-4d00-b3ec-d7108fcfd4b5.png" width="10%" alt="">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="testi.html">Testimonies</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="story">
+        
+        <h1>Our Story</h1>
+        <p>OYETSCHOOLS started many years ago as a mustard seed that germinates to become a fruit that grew up to be a tree. And it's still growing to be an Amazon.
+It came to the limelight, especially in the year 2017 with the purpose of building and reviving the education of many young ones with the hope of touching nations.
+Our core values are; integrity and excellence.
+We are making efforts to change many worlds of students for them to raise different platforms of making all dreams come true. The School is more than education. We raise selfless leaders that turn the whole world into God's given dream.</p>
+<img src="e69ade_15a3ffd8ca4d4e7e9e1a882a5f88bd0e~mv2.avif" alt="">
+    </div>
+</body>
+<footer>
+    <p>&copy; Oyetscholars. All rights reserved. <span id="year"></span></p>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</footer>
+</html>
